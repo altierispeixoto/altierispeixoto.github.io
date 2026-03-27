@@ -1,0 +1,74 @@
+baseURL = "https://altierispeixoto.github.io/"
+title = "Altieris Peixoto"
+theme = "PaperMod"
+languageCode = "en"
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  author = "Altieris Peixoto"
+  description = "Data Science, Machine Learning, and AI Insights"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = true
+
+  [params.profileMode]
+    enabled = true
+    title = "Altieris Peixoto"
+    subtitle = "AI Leader — Data Science & ML at scale"
+    imageUrl = "images/alt.jpeg"
+    imageTitle = "Altieris Peixoto"
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/altierispeixoto"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/altierispeixoto"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Archives"
+    url = "/archives/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 5
