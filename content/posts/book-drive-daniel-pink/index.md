@@ -36,9 +36,7 @@ Nobody tells you this part out loud. Operating as a data science lead inside mos
 
 When I think about what I actually do as a lead, the thing that matters most isn't the technical decisions. It's whether the people on my team have what they need to do good work.
 
-That sounds obvious. In practice it means something specific.
-
-I spend time understanding each person individually. Their background, what they're trying to get better at, what kind of work they find genuinely interesting versus what they do because it's in their job description. These are not the same thing, and pretending they are produces teams that deliver reliably and contribute nothing unexpected.
+The fist thing is to know your team. I spend time understanding each person individually. Their background, what they're trying to get better at, what kind of work they find genuinely interesting versus what they do because it's in their job description. These are not the same thing, and pretending they are produces teams that deliver reliably and contribute nothing unexpected.
 
 Once I understand that, the job becomes finding the overlap: projects that matter to the company and fit where that person wants to go. Not always possible, but worth doing consistently enough that people feel their growth is part of the work and not something they have to pursue on their own time.
 
