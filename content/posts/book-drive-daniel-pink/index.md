@@ -10,7 +10,7 @@ cover:
   relative: true
 ---
 
-A high performing data science is different from one that's just delivering what has been asked. The ideas come unsolicited, People pull at problems before they're assigned. 
+A high performing data science team is different from one that's just delivering what has been asked. The ideas come unsolicited, People pull at problems before they're assigned. 
 Something is being built, not just completed.
 The team is energised, ideas are landing, problems worth solving are actually getting solved. There's a feeling to it that's hard to describe precisely, but easy to recognise when it's there. And easy to feel when it's not.
 
