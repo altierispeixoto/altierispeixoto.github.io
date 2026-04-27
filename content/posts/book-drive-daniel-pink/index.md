@@ -10,7 +10,7 @@ cover:
   relative: true
 ---
 
-A data science team in motion feels different from one just delivering. The ideas come unsolicited. People pull at problems before they're assigned. 
+A high performing data science is different from one that's just delivering what has been asked. The ideas come unsolicited, People pull at problems before they're assigned. 
 Something is being built, not just completed.
 The team is energised, ideas are landing, problems worth solving are actually getting solved. There's a feeling to it that's hard to describe precisely, but easy to recognise when it's there. And easy to feel when it's not.
 
@@ -24,7 +24,7 @@ That part I already believed. What took me longer to understand was how much of 
 
 If I'm honest about what kills my motivation at work, it comes down to one thing: not being heard on problems that matter.
 
-Maintenance mode with no room for new ideas. Working in a lane that was defined before your team existed, without the standing to question whether it's even the right lane. Proposing something that gets shut down, watching it circulate through the organisation for two years, and then hearing it introduced in a meeting as someone else's fresh thinking.
+Maintenance mode with no room for new ideas. Working in a lane that was defined before your team existed, without the standing to question whether it's even the right lane. Proposing something that gets shut down, watching it circulate through the organisation for years, and then hearing it introduced in a meeting as someone else's fresh thinking.
 
 That last one has happened to me more than once. It's one of the sharpest tests of resilience I know.
 
