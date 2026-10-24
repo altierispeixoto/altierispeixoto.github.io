@@ -18,7 +18,7 @@ cover:
 
 _A recipe for betting on ML work, shipping it, and not disappearing into a rabbit hole. Adapted from Ryan Singer’s Shape Up and wired into Linear._
 
-A stakeholder came to my team with a very interesting problem. At the time it was urgent for them. We analyzed it, found it appealing and went all in for weeks: data collection, data analysis, modeling, architecture decisions, and so many rounds of back and forth that I lost track of the original question. Then we found out the project was interesting to them, but not a real priority. All that time went into the promise of delivering something cool: useful in people’s hands, good for my team’s morale, visible to senior leadership. And it was gone.
+A stakeholder came to my team with a very interesting problem. At the time it was urgent for them. We analyzed it, found it appealing and went all in for weeks: data collection, data analysis, modeling, architecture decisions, and so many rounds of back and forth that I lost track of the original question. Then we found out the project was interesting to them, but not a real priority and they decided to shutdown the project and move to another priority. All that time went into the promise of delivering something cool: useful in people’s hands, good for my team’s morale and visible to senior leadership was gone.
 
 Part of that was on us. Our idea was cool, and the stakeholder agreed, but being cool didn’t mean anyone would put resources behind it. We had no periodic checkpoints, so nobody asked early enough whether anyone would back it. We didn’t create a baseline to prove the value before investing in heavier infrastructure, and we never really challenged our approach or looked at different ones.
 
@@ -123,7 +123,8 @@ Two years of weekly sales and daily stock levels per SKU exist.
 The promo calendar covers the last 12 months.
 
 Rabbit holes
-Gaps in the promo calendar: flag them, do not rebuild the calendar.
+Gaps in the promo calendar (promotions that ran but were never recorded):
+flag them, do not rebuild the calendar.
 New SKUs with no history: fall back to the category average.
 Backtest realism: one simple reorder rule with a fixed lead time.
 Do not build an inventory simulator.
@@ -146,7 +147,7 @@ Just as important is what is not there: no model architecture, no tuning plan, n
 
 Notice the stop rule too. It doesn't reshape the pitch in the middle of the cycle. It cuts scope, and the open question (does promo data help at all?) becomes its own R&D bet.
 
-The baseline in the pitch is not a machine learning model at all. It's the last four-week average. Google's Martin Zinkevich opens his Rules of Machine Learning[^2] with "Don't be afraid to launch a product without machine learning". He then says to design metrics first and keep the first model simple while you get the infrastructure right. Eugene Yan makes the same point[^4] about his own first iterations. The non-ML solution is the bar every model has to clear. If your fancy model can't beat a dumb rule, you've learned something valuable, and cheaply.
+The baseline in the pitch is not a machine learning model at all. It's the last four-week average. Google's Martin Zinkevich opens his **Rules of Machine Learning**[^2] with "Don't be afraid to launch a product without machine learning". He then says to design metrics first and keep the first model simple while you get the infrastructure right. Eugene Yan makes the same point[^4] about his own first iterations. The non-ML solution is the bar every model has to clear. If your fancy model can't beat a dumb rule, you've learned something valuable, and cheaply.
 
 ---
 
@@ -158,7 +159,7 @@ But not every bet is the same kind of bet. The book describes three modes for bu
 
 **R&D bet.** You cannot shape what you do not yet know, so this bet buys learning, not a launch. The aim is to spike, not to ship, and senior people should do it, because you cannot delegate what you do not understand yourself. In ML that means a data audit, a baseline, feasibility checks and error analysis. The output is a decision (go, reshape or stop) plus code worth keeping. A model in production is not the success criterion. And you commit one cycle at a time, then decide whether to keep going.
 
-Karpathy has a recipe for the first weeks of this bet. In A Recipe for Training Neural Networks[^3], step one is to touch no model code at all and look at the data instead: duplicates, imbalances and outliers that give away quality bugs. Step two is an end-to-end training and evaluation skeleton with dumb baselines, before any fancy architecture. He also warns that training fails silently, and that a "fast and furious" approach only leads to suffering. Turn those into the first scopes of the bet and it takes shape: data audit, baseline, then a decision.
+Karpathy has a recipe for the first weeks of this bet. In **A Recipe for Training Neural Networks**[^3], step one is to touch no model code at all and look at the data instead: duplicates, imbalances and outliers that give away quality bugs. Step two is an end-to-end training and evaluation skeleton with dumb baselines, before any fancy architecture. He also warns that training fails silently, and that a "fast and furious" approach only leads to suffering. Turn those into the first scopes of the bet and it takes shape: data audit, baseline, then a decision.
 
 **Production bet.** Once R&D has de-risked the idea, shaping becomes deliberate again and the pitch describes what exists at the end of the cycle. Done means deployed: pipeline, serving, tests, monitoring and rollback. This is also where more people, or parallel teams, can join, because the R&D work has laid the foundation. Zinkevich's advice applies here too: detect problems before exporting models, and watch for silent failures. Put both in the pitch as scopes, not afterthoughts.
 
@@ -188,7 +189,7 @@ R&D to production, with one gate in between. A no-go is a good outcome: the cost
 
 Not every bet needs six weeks. The book standardizes two sizes, and you pick one when you shape the pitch.
 
-**Big batch.** One small team, one project, the full six weeks. Examples: a new model family, a new data source, a serving architecture change, an end-to-end production feature.
+**Big batch.** One small team, one project, the full six weeks. Examples: a new model family (say, moving from gradient-boosted trees to a neural network), a new data source, a serving architecture change, an end-to-end production feature.
 
 **Small batch.** Projects of one to two weeks, bundled inside the cycle. The team juggles them so everything ships before the cycle ends. Examples: feature experiments, threshold tuning, targeted error analysis, data quality fixes, retraining, dashboards.
 
@@ -200,7 +201,7 @@ If the work is too big for six weeks, hammer down the problem definition first. 
 
 A scope is a meaningful part of the problem that you can finish independently of the other parts, in a few days or less. It's bigger than a task and much smaller than the project. In ML, it's a piece you can finish and show: a number, a table or a chart. Scopes are discovered, not planned. The dependencies between the parts only show up once you've done some real work.
 
-Most ML projects are icebergs: a lot of data and model work hiding under a thin output, like a score or a table. The book's advice for icebergs is to split the heavy part into stages you can finish and integrate one at a time. That's why "data cleaning" and "modeling" make poor scopes. They're layers, and you can never say when they're done.
+**Most ML projects are icebergs**: a lot of data and model work hiding under a thin output, like a score or a table. The book's advice for icebergs is to split the heavy part into stages you can finish and integrate one at a time. That's why "data cleaning" and "modeling" make poor scopes. They're layers, and you can never say when they're done.
 
 | Weak name               | Why it fails                         | Better                                      |
 | ----------------------- | ------------------------------------ | ------------------------------------------- |
@@ -211,13 +212,13 @@ Most ML projects are icebergs: a lot of data and model work hiding under a thin 
 
 Here is a good set for the demand forecast in the sample pitch.
 
-| Scope              | Done when                                                           |
-| ------------------ | ------------------------------------------------------------------- |
-| Label audit        | Error rate measured on a sample, and a decision made on what to fix |
-| Baseline scored    | The last four-week average is scored on the holdout                 |
-| Promo features     | Promo effect measured against the baseline, per category            |
-| Evaluation harness | A nightly run produces the comparison table                         |
-| Scheduled job      | The forecast table lands in the planner's view automatically        |
+| Scope              | Done when                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| Label audit        | Error rate measured on a sample, and a decision made on what to fix                        |
+| Baseline scored    | The last four-week average is scored on the holdout                                        |
+| Promo features     | Promo effect measured against the baseline, per category                                   |
+| Evaluation harness | Every model run is scored against the baseline on the holdout, automatically, in one table |
+| Scheduled job      | The forecast table lands in the planner's view automatically                               |
 
 The scopes are right when you can see the whole project and nothing worrying hides in the details, when the names give the team a common language, and when you know where a new task goes.
 
@@ -236,7 +237,7 @@ Every piece of work has two phases. Uphill is figuring it out. Downhill is makin
 
 The book splits the climb into thirds: you have thought about it, you have validated the approach, and you have built far enough to believe no unknowns remain. The ML lesson is to climb with your hands, not your head. "We'll just use that feature store" is a theory until you've run it on real data. Then it's a fact, or a surprise.
 
-Sequence matters too. Push the scariest unknowns uphill first: label quality, feature availability at serving time, whether the signal exists at all. Leave the routine work, such as the dashboard, for last.
+Sequence matters too. **Push the scariest unknowns uphill first**: label quality, feature availability at serving time, whether the signal exists at all. Leave the routine work, such as the dashboard, for last.
 
 ```goat
             Top of the hill: no unknowns left
@@ -372,7 +373,7 @@ Health: At risk. Week 3 of 6.
 
 Label audit: downhill. Done on the full sample, error rate 4 percent.
 Promo features: uphill. Validated on one category, not yet on all.
-Evaluation harness: downhill. Running nightly.
+Evaluation harness: downhill. Scores every run automatically.
 Scheduled job: not started, low risk.
 
 Nice-to-have added: store level view. Marked ~, will be cut.
