@@ -16,7 +16,7 @@ cover:
   relative: true
 ---
 
-_A recipe for betting on ML work, shipping it, and not disappearing into a rabbit hole. Adapted from Ryan Singer’s Shape Up[^1] and wired into Linear._
+_A recipe for betting on ML work, shipping it, and not disappearing into a rabbit hole. Adapted from Ryan Singer’s Shape Up and wired into Linear._
 
 A stakeholder came to my team with a very interesting problem. At the time it was urgent for them. We analyzed it, found it appealing and went all in for weeks: data collection, data analysis, modeling, architecture decisions, and so many rounds of back and forth that I lost track of the original question. Then we found out the project was interesting to them, but not a real priority. All that time went into the promise of delivering something cool: useful in people’s hands, good for my team’s morale, visible to senior leadership. And it was gone.
 
