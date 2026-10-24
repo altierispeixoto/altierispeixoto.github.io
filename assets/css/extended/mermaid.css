@@ -1,0 +1,17 @@
+/* Mermaid diagrams ------------------------------------------------ */
+.post-content pre.mermaid {
+    overflow-x: auto;
+}
+
+.post-content pre.mermaid.mmd-ready {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 1.75rem 0;
+    text-align: center;
+}
+
+.post-content pre.mermaid.mmd-ready svg {
+    max-width: 100%;
+    height: auto;
+}

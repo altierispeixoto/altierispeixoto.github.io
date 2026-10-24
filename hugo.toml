@@ -2,16 +2,19 @@ baseURL = "https://altierispeixoto.github.io/"
 title = "Altieris Peixoto"
 theme = "PaperMod"
 languageCode = "en"
-[pagination]
-  pagerSize = 10
 enableRobotsTXT = true
 buildDrafts = false
+buildFuture = true
+
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Altieris Peixoto"
   description = "Data Science, Machine Learning, and AI Insights"
   defaultTheme = "auto"
   ShowReadingTime = true
+  ShowWordCount = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
@@ -24,7 +27,7 @@ buildDrafts = false
   [params.profileMode]
     enabled = true
     title = "Altieris Peixoto"
-    subtitle = "AI Leader — Data Science & ML at scale"
+    subtitle = "AI Leader — Data Science & ML"
     imageUrl = "images/alt.jpeg"
     imageTitle = "Altieris Peixoto"
 

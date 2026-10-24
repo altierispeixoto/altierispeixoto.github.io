@@ -1,0 +1,67 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script type="module">
+  const nodes = [...document.querySelectorAll('pre.mermaid')];
+  if (nodes.length) {
+    const { default: mermaid } = await import('https://cdn.jsdelivr.net/npm/mermaid@12/dist/mermaid.esm.min.mjs');
+    const PALETTE = {
+      light: {
+        bg: '#ffffff', panel: '#eef2ff', panel2: '#f8fafc', panel3: '#e0e7ff',
+        text: '#1e1b4b', accent: '#4338ca', muted: '#94a3b8',
+        note: '#fef3c7', noteText: '#1e1b4b', grid: '#e2e8f0', onAccent: '#ffffff',
+      },
+      dark: {
+        bg: '#1d1e20', panel: '#312e81', panel2: '#1e1b4b', panel3: '#1e1b4b',
+        text: '#e5e7eb', accent: '#818cf8', muted: '#6b7280',
+        note: '#422006', noteText: '#fef3c7', grid: '#33343a', onAccent: '#1d1e20',
+      },
+    };
+    const themeVariables = (p) => ({
+      background: p.bg,
+      primaryColor: p.panel, primaryTextColor: p.text, primaryBorderColor: p.accent,
+      secondaryColor: p.panel3, secondaryTextColor: p.text, secondaryBorderColor: p.accent,
+      tertiaryColor: p.panel2, tertiaryTextColor: p.text, tertiaryBorderColor: p.accent,
+      lineColor: p.accent, textColor: p.text, titleColor: p.text,
+      mainBkg: p.panel, nodeBkg: p.panel, nodeBorder: p.accent, nodeTextColor: p.text,
+      clusterBkg: p.panel2, clusterBorder: p.accent,
+      edgeLabelBackground: p.bg, labelBackground: p.bg,
+      actorBkg: p.panel, actorTextColor: p.text, actorBorder: p.accent, actorLineColor: p.muted,
+      signalColor: p.accent, signalTextColor: p.text,
+      labelBoxBkgColor: p.bg, labelBoxBorderColor: p.accent, labelTextColor: p.text,
+      loopTextColor: p.text,
+      activationBkgColor: p.panel, activationBorderColor: p.accent, sequenceNumberColor: p.onAccent,
+      noteBkgColor: p.note, noteTextColor: p.noteText, noteBorderColor: p.accent,
+      taskBkgColor: p.panel, taskTextColor: p.text, taskBorderColor: p.accent,
+      taskTextOutsideColor: p.text,
+      activeTaskBkgColor: p.accent, activeTaskBorderColor: p.accent,
+      doneTaskBkgColor: p.panel2, doneTaskBorderColor: p.muted,
+      critBkgColor: '#ef4444', critBorderColor: '#ef4444',
+      todayLineColor: '#ef4444', gridColor: p.grid,
+      sectionBkgColor: p.panel2, altSectionBkgColor: p.bg, excludeBkgColor: p.grid,
+    });
+    const src = new Map(nodes.map((n) => [n, n.textContent]));
+    let id = 0;
+    const draw = async () => {
+      const dark = document.documentElement.dataset.theme === 'dark';
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        themeVariables: themeVariables(dark ? PALETTE.dark : PALETTE.light),
+      });
+      for (const n of nodes) {
+        try {
+          const { svg } = await mermaid.render('mmd' + id++, src.get(n));
+          n.innerHTML = svg;
+          n.classList.add('mmd-ready');
+        } catch (e) {
+          console.error('mermaid: diagram failed to render', e);
+        }
+      }
+    };
+    await draw();
+    new MutationObserver((m) => {
+      if (m.some((x) => x.attributeName === 'data-theme')) draw();
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  }
+</script>
