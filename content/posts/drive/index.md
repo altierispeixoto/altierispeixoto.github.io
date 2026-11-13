@@ -1,8 +1,8 @@
 ---
-title: "What Actually Drives a Data Science Team"
-date: 2026-03-22
-description: "Motivation, autonomy, and mastery in DS and ML teams. What I have learned leading people through challenging times."
-tags: [Leadership, Management, Motivation, Data Science, Teams]
+title: "The Conditions for Great Data Science Work"
+date: 2026-11-14
+description: "Purpose, mastery and autonomy: what I need to do great data science work, and what I try to build for my team."
+tags: [Leadership, Management, Motivation, Data-Science, Teams]
 categories: [Leadership]
 draft: false
 cover:
@@ -10,62 +10,83 @@ cover:
   relative: true
 ---
 
-A high performing data science team is different from one that's just delivering what has been asked. The ideas come unsolicited, People pull at problems before they're assigned. 
-Something is being built, not just completed.
-The team is energised, ideas are landing, problems worth solving are actually getting solved. There's a feeling to it that's hard to describe precisely, but easy to recognise when it's there. And easy to feel when it's not.
+_A note to myself on why I do this work: purpose, mastery and autonomy, taken from Daniel Pink's Drive and applied to leading data science teams._
 
-When it's not there, the signals are quieter but consistent. Tickets get closed but nothing is being built toward anything. Smart people execute carefully and bring nothing of themselves to the work. The ideas stop coming. Not because people stopped having them. Because they've learned not to bother surfacing them.
+There are weeks when the work feels heavy and the reason for doing it gets blurry. When that happens I want somewhere to come back to, with a clear answer to a simple question: why do I do this?
 
-I read [Drive](https://www.danpink.com/books/drive/) by Daniel Pink during one of those quieter periods. He gave me vocabulary for something I'd been watching for years without being able to name it properly. External rewards, bonuses, performance metrics, structured incentives, they don't motivate the kind of work data scientists and ML engineers do. The engine runs on something else: autonomy, mastery, purpose, and the conditions that allow those things to actually exist.
-
-That part I already believed. What took me longer to understand was how much of it starts with the lead.
-
-## The seat at the table problem
-
-If I'm honest about what kills my motivation at work, it comes down to one thing: not being heard on problems that matter.
-
-Maintenance mode with no room for new ideas. Working in a lane that was defined before your team existed, without the standing to question whether it's even the right lane. Proposing something that gets shut down, watching it circulate through the organisation for years, and then hearing it introduced in a meeting as someone else's fresh thinking.
-
-That last one has happened to me more than once. It's one of the sharpest tests of resilience I know.
-
-The only way through it is to keep pushing anyway. Relentlessly. Repetitively. Not because you're certain you'll win. Because if you stop, the team stops. And a team that has stopped trying is already finished. You build relationships with the people who can actually move things. You bring the idea back in a different form, at a different moment, when the context has shifted enough to make it land.
-
-Nobody tells you this part out loud. Operating as a data science lead inside most organisations means earning your seat slowly, through demonstrated impact, strategic patience, and the willingness to be wrong in public.
-
-## Creating conditions, not enthusiasm
-
-When I think about what I actually do as a lead, the thing that matters most isn't the technical decisions. It's whether the people on my team have what they need to do good work.
-
-The fist thing is to know your team. I spend time understanding each person individually. Their background, what they're trying to get better at, what kind of work they find genuinely interesting versus what they do because it's in their job description. These are not the same thing, and pretending they are produces teams that deliver reliably and contribute nothing unexpected.
-
-Once I understand that, the job becomes finding the overlap: projects that matter to the company and fit where that person wants to go. Not always possible, but worth doing consistently enough that people feel their growth is part of the work and not something they have to pursue on their own time.
-
-The other part is removing friction. Data access that should be simple but isn't. Tooling that slows people down. Processes that were designed for a different kind of team and company's moment and never updated. Bureaucracy that costs energy without producing anything. These things never show up in a leadership framework, but they're the first thing people feel when they sit down to work.
-
-Culture gets shaped through all of this. Not through values statements or team offsites, but through what the lead actually spends time on, what problems they treat as worth fixing, and how they show up in honest conversations when things aren't going well.
-
-## What actually keeps people engaged
-
-I have seen enough teams to have a view on this, not as a theory but as something I have watched play out consistently.
-
-**Autonomy is the foundation.** The best data scientists I have worked with want to own a problem, not execute a prescription. Give someone the approach and ask them to implement it, and you get execution. Give them the problem and ask how they would tackle it, and you get ownership. People stay for the second kind of work. When it is only the first, they leave, sometimes literally, often just mentally.
-
-**The work has to genuinely stretch.** Maintenance mode is not neutral. It is actively corrosive. When a strong data scientist is doing work that does not require much of them, they do not coast. They disengage. The challenge level has to keep pace with the person, and getting that calibration right takes real attention. It is never a one-time adjustment.
-
-**Being heard matters more than most leads realise.** Not agreed with necessarily. Heard, in the sense that ideas actually enter the conversation and influence what gets built. When someone raises a technical concern or suggests a different direction and nothing changes and nobody explains why, they stop raising things. That loss is nearly invisible until it is total.
-
-**And salary.** Pink calls it a hygiene factor: pay people enough to take it off the table and it stops driving behaviour. That is true. The part that gets glossed over is where the threshold actually sits. In data science and ML, the market is competitive and the range is wide. Below the threshold, everything else becomes noise. Autonomy, challenge, purpose, none of it compensates for feeling underpaid relative to the work you are doing and what you could earn somewhere else. Be honest about this rather than using intrinsic motivation as a substitute for fair pay.
-
-## The harder truth
-
-You can do all of this. Map motivations carefully, match people to the right projects, remove friction, pay fairly, give real ownership. And still be fighting an organisation that does not see your team as a strategic asset.
-
-That tension does not resolve neatly. The way through it is the same as the way through having your ideas dismissed: you keep building the case. You find the moments where the work speaks loudly enough to shift the conversation. You do not protect the team from the difficulty of it, because they can feel it regardless, and pretending otherwise just adds another problem to the list.
-
-What Drive gave me was not a system. It was a reminder that motivation is not something you install in people. It emerges when the conditions are right. Building those conditions is the actual job.
-
-Are you leading a data science or ML team right now? I am curious what you find hardest to hold onto as the team grows and the organisation's expectations increase.
+I found the words for that answer in **Drive**[^1] by Daniel Pink. For creative, problem-solving work like data science, he argues, what keeps people going is not bonuses or targets but three things: purpose, mastery and autonomy. When I read it, I recognised all three in the times I loved this work, and noticed they were missing in the times I didn't.
 
 ---
 
-*Further reading: [Drive by Daniel Pink](https://www.danpink.com/books/drive/)*
+## 1) Purpose
+
+**I want to build things that matter.** Deliver projects. Train models. Try new approaches. Put machine learning into production where it changes something real, beyond a dashboard and beyond the team.
+
+And I want those outcomes to be good ones. It matters to me what the work is for, not only that it ships. Reducing crime is one example. At [Auror](https://www.auror.co), we help retailers and law enforcement work together to stop crime in retail stores, so the people who work and shop there are safer and the communities around them are stronger.
+
+**I want to see people grow.** One of the best parts of this work is watching someone learn something new in data science or ML, enjoy doing their job, and get hungry for what comes next in their career. When a team is like that, ideas come without being asked for and people pull at problems before they are assigned.
+
+These two halves are not separate. People grow fastest on work that matters, and work that matters gets built by people who are growing. As a lead I get to sit in the middle of both: building alongside the team and making room for them to become better than they were.
+
+---
+
+## 2) Mastery
+
+Pink defines mastery as the desire to get better and better at something that matters. He describes three laws of it, and all three hold in this field.
+
+1. **Mastery is a mindset.** You have to believe ability can grow. In ML this is not optional: the field changes every year, and what you knew three years ago is the floor, not the ceiling. Learning new approaches is not a distraction from the job. It is the job.
+2. **Mastery is a pain.** It takes effort, grit and a lot of deliberate practice that is not glamorous. Debugging a model that looked great offline and fails on real data.
+3. **Mastery is an asymptote.** You never fully get there. That is the appeal: there is always a better model, a cleaner approach, a deeper understanding of the problem.
+
+The key is the stretch. Pink calls them *Goldilocks tasks*: not so easy that you coast, not so hard that you drown. Work that is too easy does not leave strong data scientists neutral. It slowly switches them off.
+
+Robert Bjork calls them **desirable difficulties**[^2]: conditions that make practice feel slower and harder, but make the learning last. The trap is that easy work feels like progress. Bjork warns that our current performance can mislead us, and any data scientist knows the feeling: a great score on the training set that does not survive new data.
+
+> The word *desirable* matters. A difficulty only helps if you have the background to respond to it. Without that, you are back to drowning.
+
+---
+
+## 3) Autonomy
+
+Pink splits autonomy into task, time, technique and team. The first three are the ones I look for.
+
+- **Technique: how the work gets done.** I do my best work when I own the problem, not when I execute a prescription. Give someone the approach and you get execution. Give them the problem and ask how they would solve it, and you get ownership.
+- **Task: what I work on.** Room to bring in new ideas and try new approaches, not only deliver a plan that was fixed before anyone looked at the data.
+- **Time: when it gets done.** Deadlines are real, and shipping matters. But good ML work needs space to explore, to fail and to learn. Constant pressure and tight deadlines push everyone to the safest, most familiar solution every time. That is where mastery stops.
+
+> This is where autonomy and mastery meet. You cannot get better at something you are never given room to try.
+
+Mihaly Csikszentmihalyi describes the same meeting point in **Flow**[^3]. The deepest focus comes when the challenge fits your skill and you feel in control of how you meet it. Too easy and you get bored. Too hard and you get anxious. That is why the three T's matter to me: take away the control, or break the work into constant interruptions, and flow never gets a chance to start.
+
+---
+
+## 4) The baseline
+
+Pink is clear that pay is not the motivator for this kind of work, but it has to be fair. The point is to take money off the table so it stops being the issue. Below that line, purpose, mastery and autonomy cannot make up the difference. Above it, they are what counts.
+
+---
+
+## 5) When I need to remember
+
+When the reason gets blurry, or when I am deciding where to go next, these are the questions:
+
+1. **Purpose:** Will I build things that matter, for good? Will my team grow?
+2. **Mastery:** Will I keep getting better? Will the work stretch us?
+3. **Autonomy:** Will we be trusted with the how, and given the time to do it well?
+4. **Baseline:** Is the pay fair enough that it is not the issue?
+
+If the answers are yes, I am in the right place. If they are not, I know what is missing.
+
+Motivation is not something you can install in a person, including yourself. It shows up when the conditions are right. Finding those conditions, and building them for the people I lead, is the work.
+
+If you lead a data team, I'd like to hear what keeps you going.
+
+---
+
+## Sources
+
+[^1]: Daniel H. Pink, _Drive: The Surprising Truth About What Motivates Us_, Riverhead Books, 2009. [danpink.com/books/drive](https://www.danpink.com/books/drive/).
+
+[^2]: Elizabeth L. Bjork and Robert A. Bjork, [Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning](https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf), in _Psychology and the Real World_, Worth Publishers, 2011.
+
+[^3]: Mihaly Csikszentmihalyi, _Flow: The Psychology of Optimal Experience_, Harper & Row, 1990.
