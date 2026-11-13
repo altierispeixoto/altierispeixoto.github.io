@@ -1,12 +1,18 @@
 ---
-title: "The Conditions for Great Data Science Work"
+title: The Conditions for Great Data Science Work
 date: 2026-11-14
 description: "Purpose, mastery and autonomy: what I need to do great data science work, and what I try to build for my team."
-tags: [Leadership, Management, Motivation, Data-Science, Teams]
-categories: [Leadership]
+tags:
+  - Leadership
+  - Management
+  - Motivation
+  - Data-Science
+  - Teams
+categories:
+  - Leadership
 draft: false
 cover:
-  image: cover.jpg
+  image: cover_new.jpg
   relative: true
 ---
 

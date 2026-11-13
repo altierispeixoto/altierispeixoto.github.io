@@ -27,7 +27,7 @@ buildFuture = true
   [params.profileMode]
     enabled = true
     title = "Altieris Peixoto"
-    subtitle = "AI Leader — Data Science & ML"
+    subtitle = "AI Leader | Data Science & ML"
     imageUrl = "images/alt.jpeg"
     imageTitle = "Altieris Peixoto"
 
