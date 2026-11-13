@@ -3,10 +3,10 @@ title: Shape Up for Data Science and ML Projects
 date: 2026-10-24
 description: A recipe for betting on ML work, shipping it and avoiding rabbit holes.
 tags:
-  - Machine Learning
-  - Data Science
-  - Shape Up
-  - Project Management
+  - Machine-Learning
+  - Data-Science
+  - Shape-Up
+  - Project-Management
   - Linear
 categories:
   - Leadership
