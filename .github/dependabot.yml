@@ -8,12 +8,8 @@ updates:
       actions:
         patterns:
           - "*"
-    pull-request-branch-name:
-      separator: "-"
 
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
       interval: "weekly"
-    pull-request-branch-name:
-      separator: "-"
